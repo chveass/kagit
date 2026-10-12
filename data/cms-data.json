@@ -1,0 +1,324 @@
+{
+  "settings": {
+    "companyName": "Murat Kağıtçılık",
+    "slogan": "Kaliteli Ambalaj, Güvenilir Çözüm",
+    "heroTitle": "Profesyonel Granür Poşet İmalatı",
+    "heroSubtitle": "Granür poşet imalatında 1974'ten bu yana kaliteden ödün vermeden, müşteri odaklı üretim anlayışıyla hizmetinizdeyiz.",
+    "heroCtaText": "Hızlı Teklif Al",
+    "phone": "0541 640 39 69",
+    "email": "zeraith1@gmail.com",
+    "address": "Merkez: Musalla Bağları Mah., Selçuklu / KONYA | Şube: Fevzi Çakmak Mah., Karatay / KONYA",
+    "whatsappNumber": "905416403969",
+    "workingHours": "Pazartesi - Cumartesi: 08:00 - 18:00",
+    "mapEmbedUrl": "https://www.google.com/maps?q=Musalla+Bağları+Mahallesi,+Toptancılar+Sitesi,+Selçuklu,+Konya&output=embed",
+    "aboutTitle": "Murat Kağıtçılık Hakkında",
+    "aboutText": "Kurucumuz Sayın Süleyman Yekebaşlı tarafından temelleri atılan firmamız, 1974 yılından bu yana plastik ambalaj sektöründe faaliyet göstermekte olup; granür poşet imalatında köklü bir tecrübeye sahiptir.",
+    "aboutValues": [
+      {
+        "icon": "Shield",
+        "title": "Sağlam ve Dayanıklı",
+        "description": "Ürettiğimiz granür poşetler, en zorlu şartlara bile dayanacak yüksek kaliteli hammaddeden üretilir."
+      },
+      {
+        "icon": "Factory",
+        "title": "Yüksek Kapasite",
+        "description": "Üretim tesisimizde, büyük veya küçük ölçekli tüm siparişlerinizi karşılayabilecek kapasiteye sahibiz."
+      },
+      {
+        "icon": "Truck",
+        "title": "Zamanında Teslimat",
+        "description": "Gelişmiş lojistik ağımızla, siparişlerinizi söz verilen sürede kapınıza kadar ulaştırıyoruz."
+      },
+      {
+        "icon": "Users",
+        "title": "Müşteri Memnuniyeti",
+        "description": "Özel ebat taleplerinizde esnek çözümler sunarak ihtiyaçlarınıza birebir yanıt veriyoruz."
+      }
+    ],
+    "qualityTitle": "Güvenilir Üretim ve Kalite",
+    "qualityText": "Yarım asırlık tecrübemiz ve müşteri memnuniyeti odaklı hizmet politikamızla, sektörün güvenilir granür poşet tedarikçisi olmaya devam ediyoruz.",
+    "qualityPoints": [
+      {
+        "title": "Birinci Sınıf Granür Hammadde",
+        "description": "Üretimimizde yalnızca yüksek kaliteli granür hammadde kullanıyoruz. Bu, poşetlerimizin yüksek taşıma kapasitesine sahip olmasını sağlar."
+      },
+      {
+        "title": "Geniş Kapasiteli Üretim",
+        "description": "Gelişmiş ekstrüzyon makineleriyle donatılmış tesisimizde, yüksek kapasiteli ve hassas imalat gerçekleştiriyoruz."
+      },
+      {
+        "title": "Dayanıklılık Testleri",
+        "description": "Her üretim partisi, çekme ve yırtılma testlerinden geçirilerek müşterilerimize en sağlam ürünleri sunuyoruz."
+      },
+      {
+        "title": "Geri Dönüştürülebilir Malzeme",
+        "description": "Ürettiğimiz plastik poşetler, geri dönüşüme uygun yapısıyla yeniden değerlendirilebilir özelliktedir."
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "e61deeb0-b1ab-4708-9b95-ba4ee6666b3f",
+      "name": "Minik Boy Granür Poşet",
+      "slug": "minik-boy-poset",
+      "category": "standart-boy",
+      "description": "20x35 cm ebatlarında, siyah ve sarı renk seçenekleriyle üretilen minik boy granür poşet. Günlük kullanım için idealdir.",
+      "sizes": [
+        "20x35 cm"
+      ],
+      "colors": [
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        },
+        {
+          "name": "Sarı",
+          "hex": "#f1c40f"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Minik.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.095Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    },
+    {
+      "id": "7eef419f-bd4a-4ee3-bb46-2eff2787299d",
+      "name": "Küçük Boy Granür Poşet",
+      "slug": "kucuk-boy-poset",
+      "category": "standart-boy",
+      "description": "25x40 cm ebatlarında üretilen, yüksek taşıma kapasitesine sahip küçük boy granür poşet.",
+      "sizes": [
+        "25x40 cm"
+      ],
+      "colors": [
+        {
+          "name": "Kırmızı",
+          "hex": "#c0392b"
+        },
+        {
+          "name": "Beyaz",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Kucuk.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.096Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    },
+    {
+      "id": "08495ff3-7885-4abe-b527-f58954b5cbe5",
+      "name": "Orta Boy Granür Poşet",
+      "slug": "orta-boy-poset",
+      "category": "standart-boy",
+      "description": "30x50 cm ebatlarındaki orta boy granür poşet, en çok tercih edilen çok amaçlı taşıma çözümüdür.",
+      "sizes": [
+        "30x50 cm"
+      ],
+      "colors": [
+        {
+          "name": "Yeşil",
+          "hex": "#27ae60"
+        },
+        {
+          "name": "Beyaz",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Orta.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.096Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    },
+    {
+      "id": "099c36af-9dac-4a9e-9186-5f88896b5288",
+      "name": "Büyük Boy Granür Poşet",
+      "slug": "buyuk-boy-poset",
+      "category": "buyuk-boy",
+      "description": "35x60 cm ölçülerinde, ağır yük taşıma kapasitesine sahip, dayanıklı büyük boy ambalaj poşeti.",
+      "sizes": [
+        "35x60 cm"
+      ],
+      "colors": [
+        {
+          "name": "Sarı",
+          "hex": "#f1c40f"
+        },
+        {
+          "name": "Beyaz",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Buyuk.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.096Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    },
+    {
+      "id": "236455ba-8094-4519-807c-539f0e2a968d",
+      "name": "Battal Boy Granür Poşet",
+      "slug": "battal-boy-poset",
+      "category": "buyuk-boy",
+      "description": "40x70 cm geniş hacimli battal boy poşet. Endüstriyel ve toptan satış kullanımlarına uygundur.",
+      "sizes": [
+        "40x70 cm"
+      ],
+      "colors": [
+        {
+          "name": "Mavi",
+          "hex": "#4a7fb5"
+        },
+        {
+          "name": "Beyaz",
+          "hex": "#ffffff"
+        },
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Battal.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.096Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    },
+    {
+      "id": "a690d9ee-a2e8-4949-a45d-f85f1404ac8f",
+      "name": "Jumbo Boy Granür Poşet",
+      "slug": "jumbo-boy-poset",
+      "category": "buyuk-boy",
+      "description": "80x110 cm ekstra büyük ebat. Ağır sanayi, tekstil ve büyük hacimli ürünlerin sevkiyatı için üretilmiştir.",
+      "sizes": [
+        "80x110 cm"
+      ],
+      "colors": [
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        },
+        {
+          "name": "Beyaz",
+          "hex": "#ffffff"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Jumbo.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.096Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    },
+    {
+      "id": "803fb87f-0fc1-4648-a3ca-8617da29322e",
+      "name": "Çöp Poşeti (80x110)",
+      "slug": "cop-poseti",
+      "category": "cop-poseti",
+      "description": "80x110 cm ebatlarında, sızdırmaz yapılı, ekstra kalın dayanıklı sanayi tipi çöp poşeti.",
+      "sizes": [
+        "80x110 cm"
+      ],
+      "colors": [
+        {
+          "name": "Siyah",
+          "hex": "#2d2d2d"
+        },
+        {
+          "name": "Beyaz",
+          "hex": "#ffffff"
+        }
+      ],
+      "moq": 500,
+      "images": [
+        "/images/Cop.png"
+      ],
+      "featured": true,
+      "createdAt": "2026-10-01T14:04:44.096Z",
+      "updatedAt": "2026-10-01T14:04:44.096Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1904d3ac-9015-4787-82fe-8051aeb04a5e",
+      "name": "Standart Boy Poşetler",
+      "slug": "standart-boy",
+      "description": "Minik, küçük ve orta boy günlük kullanım granür poşetleri",
+      "order": 1
+    },
+    {
+      "id": "a002e374-23ad-46ce-8ab1-cce48687a8ae",
+      "name": "Büyük Boy Poşetler",
+      "slug": "buyuk-boy",
+      "description": "Büyük, battal ve jumbo boy geniş hacimli poşetler",
+      "order": 2
+    },
+    {
+      "id": "1609294c-f30b-4a51-91b2-e64d03bf9501",
+      "name": "Çöp Poşetleri",
+      "slug": "cop-poseti",
+      "description": "Sızdırmaz ve dayanıklı çöp poşetleri",
+      "order": 3
+    }
+  ],
+  "faq": [
+    {
+      "id": "9a9daaf7-17ee-44c9-801e-d1dcf27e9e6c",
+      "question": "Minimum sipariş adedi (MOQ) nedir?",
+      "answer": "Özel üretim boyutlarda ve renklerdeki granür poşet siparişleriniz için minimum üretim miktarımız 500 KG'dır.",
+      "order": 1
+    },
+    {
+      "id": "68715707-dc68-47a0-abcf-41b4c73b09b0",
+      "question": "Özel ebat kesim yapabiliyor musunuz?",
+      "answer": "Evet, müşterilerimizin taleplerine göre özel ebat ve ölçülerde üretim yapabiliyoruz. Özel ebat siparişleri için lütfen teknik ekibimizle iletişime geçin.",
+      "order": 2
+    },
+    {
+      "id": "185fedd4-c642-44a3-abb5-a0efac5c5b26",
+      "question": "Teslimat süresi ne kadardır?",
+      "answer": "Standart ürünlerde teslimat süresi sipariş onayından itibaren 5-7 iş günüdür. Özel üretim siparişlerinde bu süre 10 iş gününe kadar uzayabilir.",
+      "order": 3
+    },
+    {
+      "id": "a0c8411e-8280-43ee-be23-51b73daac80f",
+      "question": "Ürünlerinize baskı yapabiliyor musunuz?",
+      "answer": "Firmamız bünyesinde baskı ünitesi bulunmamaktadır. Yalnızca baskısız, yüksek dayanımlı granür poşet imalatı gerçekleştirmekteyiz.",
+      "order": 4
+    },
+    {
+      "id": "6fdee45c-0622-41bc-8977-4bdcf6d5fb8d",
+      "question": "Ödeme koşullarınız nedir?",
+      "answer": "İlk siparişlerde %50 peşin, kalan %50 sevkiyat öncesi ödeme şeklinde çalışıyoruz. Düzenli müşterilerimize vadeli ödeme seçenekleri sunulmaktadır.",
+      "order": 5
+    }
+  ],
+  "contacts": [],
+  "quotes": [],
+  "admin": []
+}

@@ -1,26 +1,492 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ===================================
+   MURAT KAĞITÇILIK - DESIGN SYSTEM
+   Kraft / Pastel / Earthy Tones
+   =================================== */
+
+@theme {
+  /* --- Color Palette --- */
+  --color-kraft-50: #faf6f0;
+  --color-kraft-100: #f5ede0;
+  --color-kraft-200: #e8d5b8;
+  --color-kraft-300: #d4b888;
+  --color-kraft-400: #c49a5c;
+  --color-kraft-500: #b07d3a;
+  --color-kraft-600: #96652e;
+  --color-kraft-700: #7a5026;
+  --color-kraft-800: #5e3d1f;
+  --color-kraft-900: #422b16;
+
+  --color-forest-50: #f0f7f2;
+  --color-forest-100: #d9eede;
+  --color-forest-200: #b0d9b9;
+  --color-forest-300: #7cbf8c;
+  --color-forest-400: #4da563;
+  --color-forest-500: #2d8a45;
+  --color-forest-600: #1f6e33;
+  --color-forest-700: #175228;
+  --color-forest-800: #11391d;
+  --color-forest-900: #0b2213;
+
+  --color-cream-50: #fffdf7;
+  --color-cream-100: #fdf8ed;
+  --color-cream-200: #f9eed5;
+  --color-cream-300: #f3e0b5;
+  --color-cream-400: #e8cc88;
+  --color-cream-500: #d4b166;
+
+  --color-earth-50: #f7f3ef;
+  --color-earth-100: #ede5d9;
+  --color-earth-200: #d6c4a8;
+  --color-earth-300: #b89e74;
+  --color-earth-400: #9a7d4e;
+  --color-earth-500: #7d6138;
+
+  --color-charcoal-50: #f5f5f4;
+  --color-charcoal-100: #e7e5e4;
+  --color-charcoal-200: #d6d3d1;
+  --color-charcoal-300: #a8a29e;
+  --color-charcoal-400: #78716c;
+  --color-charcoal-500: #57534e;
+  --color-charcoal-600: #44403c;
+  --color-charcoal-700: #363330;
+  --color-charcoal-800: #292524;
+  --color-charcoal-900: #1c1917;
+
+  /* --- Spacing --- */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+  --spacing-100: 25rem;
+  --spacing-120: 30rem;
+
+  /* --- Fonts --- */
+  --font-sans: 'Inter', 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-display: 'Outfit', 'Inter', system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ===================================
+   BASE STYLES
+   =================================== */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-50);
+  color: var(--color-charcoal-800);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-kraft-300);
+  color: var(--color-charcoal-900);
+}
+
+/* ===================================
+   SCROLLBAR
+   =================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-kraft-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-kraft-400);
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes grain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.7s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.7s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 2s linear infinite;
+}
+
+/* Stagger animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* ===================================
+   GLASSMORPHISM UTILITIES
+   =================================== */
+
+.glass {
+  background: rgba(255, 253, 247, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 184, 136, 0.2);
+}
+
+.glass-dark {
+  background: rgba(41, 37, 36, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 184, 136, 0.15);
+}
+
+/* ===================================
+   KRAFT PAPER TEXTURE OVERLAY
+   =================================== */
+
+.kraft-texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ===================================
+   BUTTON STYLES
+   =================================== */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(135deg, var(--color-kraft-500) 0%, var(--color-kraft-600) 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(176, 125, 58, 0.25);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--color-kraft-600) 0%, var(--color-kraft-700) 100%);
+  box-shadow: 0 4px 16px rgba(176, 125, 58, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: transparent;
+  color: var(--color-kraft-600);
+  font-weight: 600;
+  border: 2px solid var(--color-kraft-300);
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-secondary:hover {
+  background: var(--color-kraft-50);
+  border-color: var(--color-kraft-500);
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+}
+
+.btn-whatsapp:hover {
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  transform: translateY(-1px);
+}
+
+/* ===================================
+   CARD STYLES
+   =================================== */
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  border: 1px solid var(--color-kraft-100);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(176, 125, 58, 0.12);
+  border-color: var(--color-kraft-200);
+  transform: translateY(-2px);
+}
+
+.card-kraft {
+  background: linear-gradient(135deg, var(--color-kraft-50) 0%, var(--color-cream-100) 100%);
+  border-radius: 1rem;
+  border: 1px solid var(--color-kraft-200);
+}
+
+/* ===================================
+   SECTION STYLES
+   =================================== */
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-charcoal-800);
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--color-charcoal-400);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* ===================================
+   WHATSAPP FLOATING BUTTON
+   =================================== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 50;
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
+}
+
+/* ===================================
+   THREE.JS CANVAS
+   =================================== */
+
+.three-canvas-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.three-canvas-container canvas {
+  outline: none !important;
+}
+
+/* ===================================
+   ADMIN PANEL STYLES
+   =================================== */
+
+.admin-sidebar {
+  background: linear-gradient(180deg, var(--color-charcoal-900) 0%, var(--color-charcoal-800) 100%);
+}
+
+.admin-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--color-charcoal-300);
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.admin-sidebar-item:hover,
+.admin-sidebar-item.active {
+  background: rgba(176, 125, 58, 0.15);
+  color: var(--color-kraft-300);
+}
+
+.admin-card {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-charcoal-100);
+  padding: 1.5rem;
+}
+
+/* ===================================
+   ACCORDION (FAQ)
+   =================================== */
+
+.accordion-item {
+  border: 1px solid var(--color-kraft-100);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-item:hover {
+  border-color: var(--color-kraft-300);
+}
+
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  background: white;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-charcoal-700);
+  transition: all 0.2s ease;
+}
+
+.accordion-trigger:hover {
+  background: var(--color-kraft-50);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.accordion-content.open {
+  max-height: 500px;
+}
+
+.accordion-content-inner {
+  padding: 0 1.25rem 1.25rem;
+  color: var(--color-charcoal-500);
+  line-height: 1.7;
+}
+
+/* ===================================
+   RESPONSIVE UTILITIES
+   =================================== */
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
 }
