@@ -13,8 +13,25 @@ export default async function SSSPage() {
 
   const faq = getFaq();
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-kraft-50 to-cream-100 py-20 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -44,3 +61,4 @@ export default async function SSSPage() {
     </>
   );
 }
+

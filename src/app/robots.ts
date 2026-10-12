@@ -1,5 +1,7 @@
 import type { MetadataRoute } from 'next';
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://muratkagitcilik.com';
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
@@ -9,5 +11,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
+    sitemap: `${siteUrl}/sitemap.xml`,
   };
 }
+

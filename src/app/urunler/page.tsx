@@ -4,8 +4,8 @@ import { getProducts, getCategories } from '@/lib/cms';
 import ProductCatalog from '@/components/ProductCatalog';
 
 export const metadata: Metadata = {
-  title: 'Ürünlerimiz | Murat Kağıtçılık & Plastik',
-  description: 'Granür poşet ve ambalaj ürünlerimizin ebat, renk ve minimum sipariş bilgilerini inceleyin, hızlıca teklif alın.',
+  title: 'Ürünlerimiz - Granür Poşet ve Ambalaj Çözümleri',
+  description: 'Murat Kağıtçılık toptan granür poşet ve ambalaj ürünlerinin ebat, renk ve sipariş detaylarını inceleyin. İhtiyacınıza uygun poşet üretimi için teklif alın.',
 };
 
 export default async function UrunlerPage() {

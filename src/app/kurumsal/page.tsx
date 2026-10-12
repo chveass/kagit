@@ -4,8 +4,8 @@ import { Leaf, Shield, Truck, Users, Factory, Recycle, Target, Zap } from 'lucid
 import { getSettings } from '@/lib/cms';
 
 export const metadata: Metadata = {
-  title: 'Kurumsal | Murat Kağıtçılık & Plastik',
-  description: 'Murat Kağıtçılık & Plastik hakkında kurumsal bilgiler, vizyonumuz, misyonumuz ve değerlerimiz.',
+  title: 'Kurumsal & Hakkımızda',
+  description: '1974 yılında temelleri atılan Murat Kağıtçılık & Plastik, yarım asırlık tecrübesiyle Konya\'da granür poşet ve ambalaj imalatında güvenilir çözüm ortağınızdır.',
 };
 
 const values = [

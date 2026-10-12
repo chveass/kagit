@@ -4,8 +4,8 @@ import { Award, Beaker, Factory, ShieldCheck, Leaf, CheckCircle2, Microscope, Re
 import { getSettings } from '@/lib/cms';
 
 export const metadata: Metadata = {
-  title: 'Kalite | Murat Kağıtçılık & Plastik',
-  description: 'Murat Kağıtçılık & Plastik üretim standartları, ham madde kalitesi ve dayanıklılık testleri hakkında bilgi.',
+  title: 'Kalite Standartlarımız',
+  description: 'Murat Kağıtçılık & Plastik birinci sınıf granür hammadde, dayanıklılık testleri ve yüksek üretim standartları hakkında detaylı bilgi.',
 };
 
 const qualityPoints = [

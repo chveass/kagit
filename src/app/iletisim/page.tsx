@@ -6,8 +6,8 @@ import ContactForm from '@/components/ContactForm';
 import QuoteForm from '@/components/QuoteForm';
 
 export const metadata: Metadata = {
-  title: 'İletişim | Murat Kağıtçılık & Plastik',
-  description: 'Murat Kağıtçılık & Plastik ile iletişime geçin. Konya Selçuklu ve Karatay adreslerimiz, telefon, e-posta ve hızlı teklif formu.',
+  title: 'İletişim & Teklif Al',
+  description: 'Murat Kağıtçılık & Plastik iletişim bilgileri. Konya Selçuklu merkez ve Karatay şube adreslerimiz, 0541 640 39 69 telefon hattımız ve anında fiyat teklif formu.',
 };
 
 type IletisimPageProps = {
